@@ -1,0 +1,101 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.cards{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
+   
+}
+.card{
+    border: 1px solid lightgray;
+    box-shadow: 3px 3px 3px lightgray;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    border-radius:10px;
+    padding:10px;
+   width:350px;
+   
+    
+}
+.details{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+}
+.details-modal {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left:10px;
+    margin-right:5px
+}
+.title {
+  color:  #000000;
+  font-weight:600
+}
+
+.text{
+    font-size:15px;
+    font-weight:300;
+    color:gray
+}
+
+.heading{
+    font-size:17px;
+    font-weight:900;
+    color:black
+}
+
+.modal{
+    position:fixed;
+    top:0;
+    left:0;
+    background-color:lightgray;
+    display:flex;
+    padding:20px;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    height:100%;
+    width:100%;
+    padding:20px;
+    
+    
+}
+.margin {
+    margin-bottom: 15px;
+    border: 1px solid #fcc9c7;
+    background: red;
+}
+.role-title{
+    background-color:red;
+    
+    border-radius:15px;
+    text-align:center;
+    align-self:center;
+    padding:5px;
+    color:#fff;
+}
+.st{
+    background-color:deepskyblue;
+    color:#fff;
+}
+.role-container{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:15px;
+}
+@media (max-width: 950px){
+    .cards{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+    }
+}
